@@ -1,0 +1,16 @@
+common: &common
+  adapter: postgresql
+  username: eastagile
+  password: major3{loper
+
+development:
+  <<: *common
+  database: db/depot_development
+
+test:
+  <<: *common
+  database: db/depot_test
+
+production:
+  <<: *common
+  database: db/depot_production
